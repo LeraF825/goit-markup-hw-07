@@ -725,7 +725,7 @@ color: var(--third-color);
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 408px;
+    min-width: 392px;
 padding: 72px 24px 24px 24px;
 margin-bottom: 24px;
 background: var(--modal-window);
