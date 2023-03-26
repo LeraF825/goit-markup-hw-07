@@ -737,6 +737,12 @@ background: var(--modal-window);
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 }
+@media screen and (max-width:400px) {
+    .modal {
+        min-width: 300px; 
+    } 
+    
+}
 .modal-btn {
 position: absolute;
 top: 24px;
@@ -842,6 +848,11 @@ align-items:center;
 justify-content: center;
 gap: 6px;
 }
+@media screen and (max-width:400px) {
+    .modal-form-agreement {
+        display: block; 
+    }    
+}
 .modal-form-checkbox:checked + .modal-form-custom-checkbox > .unchecked {
     opacity: 1;
 }
@@ -865,6 +876,7 @@ letter-spacing: 0.04em;
 color: #757575;
 user-select: none;
 }
+
 .agreement-link {
     color: var(--primary-brand);
     text-decoration: underline;
@@ -964,7 +976,12 @@ user-select: none;
   .socials-mobile {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 56px;
+}
+@media screen and (max-width: 427px) {
+    .socials-mobile {
+        gap:24px;
+    }
 }
 .mobile-menu-link.active {
     color: var(--pressed-state);
