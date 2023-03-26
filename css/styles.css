@@ -210,7 +210,7 @@ transition: color var(--transition-effect);
 (min-resolution: 192dpi) and (max-width: 767px),
 (min-resolution: 2dppx) and (max-width: 767px) {
 .hero {
-  background-image: linear-gradient (rgba(46, 47, 66, 0.7),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)),
   url(../images/hero/hero-phone@2x.jpg);
 }
@@ -226,7 +226,7 @@ transition: color var(--transition-effect);
   (min-resolution: 192dpi) and (min-width: 768px),
   (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient (rgba(46, 47, 66, 0.7),
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)),
   url(../images/hero/hero-tablet@2x.jpg);
   }
@@ -434,6 +434,11 @@ background-color: var(--pressed-state);
         margin: 0 auto;
         margin-bottom: 72px;
       }
+    @media screen and (min-width: 768px) {
+        .list-title-team {
+            margin: 0;
+        } 
+    }
     .item {
     background-color: var(--third-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -959,7 +964,7 @@ user-select: none;
   .socials-mobile {
     display: flex;
     justify-content: center;
-    gap: 56px;
+    gap: 24px;
 }
 .mobile-menu-link.active {
     color: var(--pressed-state);
